@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css/styles.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="content">
+          <h1 class="content_text">Обратная форма</h1>
+          <form action="">
+            <div class="name_tel">
+              <div class="name">
+                <input name="username" class="input" type="text" id="username" placeholder="Епифан" pattern="[0-9]*" />
+                <label class="label" for="username">ФИО</label>
+              </div>
+              <div class="tel">
+                <input
+                  class="input"
+                  type="tel"
+                  placeholder="+7 (423) 123-45-67"
+                />
+                <label class="label" for="tel">Телефон</label>
+              </div>
+              <div class="email">
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="mail@example.com"
+                />
+                <label class="label" for="email">E-mail</label>
+              </div>
+            </div>
+            <div class="message">
+              
+              <textarea
+                class="textarea"
+                name="message"
+                id="message"
+                maxlength="50"
+                rows="6"
+                placeholder="Приветствую!"
+              ></textarea>
+              <label class="label" for="message"> Сообщение </label>
+            </div>
+            <div class="warning_info">
+              Отправляя форму, Вы соглашаетесь на
+              <a class="personal" href="">обработку персональных данных</a>
+            </div>
+            
+              <button class="btn">Отправить</button>
+            
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
